@@ -1,0 +1,212 @@
+﻿body {
+    background-color: #033540;
+}
+
+
+/* Estilos generales para la caja principal */
+.movie-details {
+    display: flex;
+    background-color: #015366;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+
+}
+
+/* Estilos para la caja del póster en el lado derecho */
+.poster-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #63898C;
+    border: 1px solid #fff;
+}
+
+/* Estilos para la imagen del póster */
+.poster-image {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la caja de información de la película en el lado izquierdo */
+.info-container {
+    flex: 2;
+    padding: 20px;
+    color: #fff;
+    border: 1px solid;
+
+}
+
+/* Estilos para el título de la película */
+.title {
+    font-size: 28px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Estilos para la fecha de lanzamiento */
+.release-date-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Estilos para la descripción de la película */
+.description {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Separador entre detalles de la película y comentarios */
+.separator {
+    height: 2px;
+    background-color: #000;
+    margin: 20px 0;
+}
+
+ Estilos para la caja de comentarios Cubre todos los comentarios 
+.comment-container {
+    background-color: #015366;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+
+
+/* Estilos para el nombre de usuario en comentarios */
+.comment p:first-child,
+.reply p:first-child,
+.sub-reply p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Estilos para la fecha y nombre de usuario en comentarios */
+.comment p:nth-child(2),
+.reply p:nth-child(2),
+.sub-reply p:nth-child(2) {
+    font-size: 16px;
+    font-style: italic;
+    color: #000;
+}
+
+/* Estilos para el texto del comentario 
+*/
+.comment p:last-child,
+.reply p:last-child,
+.sub-reply p:last-child {
+    font-size: 18px;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* Estilos para las respuestas 
+*/
+.reply,
+.sub-reply {
+    margin-left: 20px;
+    border-left: 2px solid #000;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+
+.comentarios {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*Caja comentario principal*/
+.comment {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+    /*texto comentario principal*/
+    .comment p {
+        margin: 0;
+        font-size: 14px;
+        color: #000;
+    }
+
+
+/* caja de respuestas */
+.reply {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+    .reply p {
+        margin: 0;
+        font-size: 14px;
+        color: #000;
+    }
+
+.btnResponder, .btnEliminar, .btnResponderRespuesta, .btnEliminarRespuesta {
+    background-color: #63898C;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+    .btnResponder:hover, .btnEliminar:hover, .btnResponderRespuesta:hover, .btnEliminarRespuesta:hover {
+        background-color: #63898C;
+    }
+
+
+
+.input-Comentario {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+input[type="text"] {
+    background-color: #fff;
+    border-radius: 10px; /* Aumenta el valor para hacerlo más redondeado */
+    padding: 10px; /* Aumenta el valor para hacerlo un poco más grande */
+    width: 20%; /* Ocupará el 100% del ancho de su contenedor */
+    border: 1px solid #fff;
+}
+
+.btnResponder,
+.btnEliminar,
+.btnResponderRespuesta,
+.btnEliminarRespuesta {
+}
+
+
+/* Estilos para la caja de comentarios */
+.comments-box {
+    background-color: #015366; /* Color de fondo similar al de la película */
+    border: 1px solid; /* Agregar un borde */
+    border-radius: 0px; /* Borde redondeado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 5px; /* Espacio entre la película y la caja de comentarios */
+    padding: 20px; /* Espacio interno */
+    color: #fff; /* Texto en color blanco */
+}
+
+    /* Estilos para el título de la sección de comentarios */
+    .comments-box h2 {
+        font-size: 24px;
+        margin: 0 0 20px 0; /* Espacio debajo del título */
+    }

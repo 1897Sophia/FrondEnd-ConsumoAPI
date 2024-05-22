@@ -1,0 +1,81 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8TEhUSEg8PFRUVDw0PFxcVDQ8PFRUVFRUWFhUVFxUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NFQ8PFS0dHR0tLS0tLS0tLS0tLS0tLS0tLS0tLS03NzctLS03LS0tLS0tLS0tLS0tLS0tLTctLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAgADB//EABgQAQEBAQEAAAAAAAAAAAAAAAABEQIS/8QAGAEBAQEBAQAAAAAAAAAAAAAAAQIAAwT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/APGSwj1uBaFmBYRRYQgxg2GM1IZsMOMwhFMYDDCKWZrDDjBMbDY0ZhjKxLFhYpmxtSzEMliGIwKaggMWZLGiAhiKxZhCzNFAsAZCCxYswaQ40JAMhxow1sCsbCBIcMJbUtIrGYaMCsaxm0SNYYcZtQcNjM2pwLwWM2jBYpgdRmtirAzJGLTgOgWKDFLUsClsUliMZQBLRoSGhBkYCKLEM0MhKWxqypCwhbGYNWhkOEaMawmRmSTgYAqwWM2hOKOM2pY2BikqwWBtTUrxmOpFVYAUMrBYCmhWNjFIpowEQlLEqgMjAxjGKTDBIqEUKBkwhsJYhsbGkUwELGEDGisDDWxrDCW1LYcLMmwLTjNoxrFChkthxmKLGVU4CMFUKCAcZlIsY0YCErTQYGbGBaKgxUIrYeYxKSxhhGiRWDFQipxUhYp04MVhwjRIcaKxgjFYcYjRgxeNjNowYpsZtRhxVgZtTYMWLGOpwWKYMjGVYApFgkWmwGUJqwCiRjWZSKMUmwEDFAEmRuVMK0Iw8qS0ioxwhjI0VIU60ZsVIQJFYWwpBVhwjRgw4rGwak4rGw4NRhXgsbG1NTi8ONh1zaqsGAoxl4LAdRU4uRgUCqsTICnAtNgUmpxcgoKU1VgCk4FUYFKwwGQpVGxoSkxUTIqEVsVAZFJpONCUmESKkIoxeCRUhTa2NIrGkKdGHDhw4NTjYrGxsbUWB0qfLYdTibHRNB1AqryArU2JXU4kpFihQqIY2AKRWNGBQTVJoMAOAKPK4kylNOHljhCmxpVQxLRUGGKTTioIcKTDhipFJtaKkGLhRU4vGkJxOjGxWHDg1ONYTjNrnjYuwNh1FicdLBYMMrnYmxYqVSueCrsQFpqVpsSqBNihQqIgqqnUqTYFJoMFTigFEyDlcIrQwYqFJkVBDiklWDlUKa0VBi4qJrSLgisKK0i5BFxURazSNi4pNqcUZGwjRIMXjY2DUUYrGsB1zHS7E4FRHlNdKnqCqlc+kWLFSuOYqrEpXE2BdRYlUTU2KYKQmqsCVJsCqLAqE80HCFHBCUq5qomRUUmlUqVFNVFRMVFRFXyqJi5VRFKonmLUiktFSKSYcBUkEyCsBUVdowUxFFiqnpK4ipq7EVNVE1C+k2JXEVNiqmpq4nRVYkLTU6qixNVEpsUkKg0GjQTFMzCkxmIXDjMpCopmVE04vlmMTVxWMyo51UVGZSarFQsqIpOMykqAYhLVmSpNRQyaqNUVmFXEJrMhcTUMyauBNjMKqJFZkrTYAwUAWSY//9k=');
+    background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Para evitar que se repita la imagen */
+    background-position: center; /* Para centrar la imagen */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-login, .btn-register {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .btn-login:hover, .btn-register:hover {
+        background-color: #2980b9;
+    }
+
+/* Estilos para los formularios */
+#<%= loginForm.ClientID % > .login-form-enter,
+#<%= registerForm.ClientID % > .register-form-enter {
+    display: block;
+}
+
+#<%= loginForm.ClientID % > .register-form-enter,
+#<%= registerForm.ClientID % > .login-form-enter {
+    display: none;
+}
+
+.login-container a.toggle-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+    .login-container a.toggle-link:hover {
+        color: #555;
+    }
